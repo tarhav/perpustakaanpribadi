@@ -3,8 +3,6 @@
 **Perpustakaan Pribadi** adalah aplikasi untuk membantu pengguna mengelola koleksi buku secara lebih teratur dan elegan.  
 Dengan aplikasi ini, pengguna dapat menambahkan, menyaring, dan mengelola detail buku sesuai kebutuhan.
 
----
-
 ## ✨ Fitur Utama
 
 - **Statistik Buku**
@@ -27,8 +25,6 @@ Dengan aplikasi ini, pengguna dapat menambahkan, menyaring, dan mengelola detail
   - Cari berdasarkan **judul** atau **penulis**
   - Filter berdasarkan **genre** (fantasi, self-help, fiksi, bisnis, dll)
 
----
-
 ## 📖 Tampilan Buku (Book Card)
 
 Setiap buku ditampilkan dalam kartu berisi:
@@ -41,8 +37,6 @@ Setiap buku ditampilkan dalam kartu berisi:
 - Keterangan tambahan (misalnya: *E-book*)
 - Deskripsi singkat
 - Tombol **Edit** (ikon pensil)
-
----
 
 ## 📝 Form Tambah Buku
 
@@ -73,8 +67,6 @@ Form memungkinkan pengguna mengisi detail lengkap:
 - **Simpan Buku**
 - **Batal**
 
----
-
 ## 📑 Detail Buku & Unduhan
 
 - Cover buku besar di sisi kiri
@@ -86,5 +78,3 @@ Form memungkinkan pengguna mengisi detail lengkap:
   - Tahun terbit, jumlah halaman
   - ISBN, penerbit
   - Genre, status baca, dll
-
----
