@@ -1,6 +1,6 @@
 # 📚 Perpustakaan Pribadi
 
-**Perpustakaan Pribadi** adalah aplikasi untuk membantu pengguna mengelola koleksi buku secara lebih teratur dan elegan.  
+**Perpustakaan Pribadi** adalah aplikasi untuk membantu pengguna mengelola koleksi buku secara teratur dan elegan.  
 Dengan aplikasi ini, pengguna dapat menambahkan, menyaring, dan mengelola detail buku sesuai kebutuhan.
 
 ## ✨ Fitur Utama
