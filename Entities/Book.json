@@ -1,0 +1,116 @@
+{
+  "name": "Book",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Judul buku"
+    },
+    "author": {
+      "type": "string",
+      "description": "Nama penulis"
+    },
+    "genre": {
+      "type": "string",
+      "enum": [
+        "fiksi",
+        "non-fiksi",
+        "misteri",
+        "romantis",
+        "fantasi",
+        "sejarah",
+        "biografi",
+        "sains",
+        "teknologi",
+        "bisnis",
+        "self-help",
+        "horor",
+        "thriller",
+        "komedi",
+        "drama",
+        "petualangan"
+      ],
+      "default": "fiksi",
+      "description": "Genre buku"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "belum_dibaca",
+        "sedang_dibaca",
+        "sudah_dibaca",
+        "favorit"
+      ],
+      "default": "belum_dibaca",
+      "description": "Status bacaan"
+    },
+    "year": {
+      "type": "number",
+      "description": "Tahun terbit"
+    },
+    "pages": {
+      "type": "number",
+      "description": "Jumlah halaman"
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Penerbit"
+    },
+    "isbn": {
+      "type": "string",
+      "description": "Nomor ISBN"
+    },
+    "description": {
+      "type": "string",
+      "description": "Deskripsi atau sinopsis buku"
+    },
+    "cover_url": {
+      "type": "string",
+      "description": "URL gambar cover buku"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating buku (1-5 bintang)"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Catatan pribadi tentang buku"
+    },
+    "ebook_uri": {
+      "type": "string",
+      "description": "URI file e-book pribadi"
+    }
+  },
+  "required": [
+    "title",
+    "author"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "created_by": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "write": {
+      "$or": [
+        {
+          "created_by": "{{user.email}}"
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    }
+  }
+}
